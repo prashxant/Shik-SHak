@@ -17,13 +17,15 @@ const links = [
 ]
 
   return (
-    <div className="navbar-root">
-      <div className="logo">Fintech</div>
-      <div className="links">
-        {links.map((link,idx)=>(<a className="links-items" key={link.title}href="link.href">{link.title}</a>
+
+<div className="transition duration-300 p-6 rounded-md  flex justify-between max-w-100">
+      <div className="">Fintech</div>
+      <div className="">
+        {links.map((link,idx)=>(<a className="" key={link.title}href="link.href">{link.title}</a>
         ))}
-        <button className="btn">Start Free Trial</button>
+        <button className="btn ">Start Free Trial</button>
       </div>
     </div>
+
   )
 }

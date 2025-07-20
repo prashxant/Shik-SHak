@@ -1,6 +1,9 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+@theme {
+  --color-bg-blue: oklch(0.9576 0.0201 229.04);
+}
 *{
   margin: 0;
   padding: 0;
@@ -8,48 +11,3 @@
   font-family: 'Inter';
 }
 
-.container{
-  padding: 10px ;
-  max-width: 300px;
-  margin: 0 auto;
-
-}
-.layout{
-  height: 100vh;
-  background-image: linear-gradient(to bottom,white ,#dbeafe , white);
-}
-
-.navbar-root{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.logo{
-  font-size: 8px;
-   font-weight: 800;
-}
-
-.links{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.links-items:hover{
-  color: black;
-  transition: color 0.2s ease-out;
-}
-.links-items{
-  font-size: 8px;
-  text-decoration: none;
-  color: #525252;
-}
-.btn{
-  all : unset;
-  font-size: 8px;
-  padding: 4px 8px;
-  background-color: #3b82f6;
-  border-radius: 4px;
-  color: #ffff;
-
-}
