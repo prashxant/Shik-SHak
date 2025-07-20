@@ -20,9 +20,9 @@ const links = [
     <div className="navbar-root">
       <div className="logo">Fintech</div>
       <div className="links">
-        {links.map((link,idx)=><a className="links-items" key={link.title}href="link.href">{link.title}</a>
-
-        )}
+        {links.map((link,idx)=>(<a className="links-items" key={link.title}href="link.href">{link.title}</a>
+        ))}
+        <button className="btn">Start Free Trial</button>
       </div>
     </div>
   )
