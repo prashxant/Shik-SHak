@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100%;
   background-image:
-    linear-gradient(to right, oklch(93.2% 0.032 255.585), #eef0f1, oklch(93.2% 0.032 255.585)),
-    linear-gradient(to bottom, #ffffff,oklch(93.2% 0.032 255.585),#ffffff);
-  background-blend-mode: multiply;
+    linear-gradient(to right, #E0EFFE,#EEF3FE ,#E2F1FF),
+    linear-gradient(to bottom, #ffff,#EEF3FE,#EEF3FE);
+  background-blend-mode:multiply;
 }
