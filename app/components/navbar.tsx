@@ -18,10 +18,10 @@ const links = [
 
   return (
 
-<div className="transition duration-300 p-6 rounded-md  flex justify-between max-w-100">
+<div className="flex justify-between items-center">
       <div className="">Fintech</div>
       <div className="">
-        {links.map((link,idx)=>(<a className="" key={link.title}href="link.href">{link.title}</a>
+        {links.map((link,idx)=>(<a className="" key={link.title}href={link.href}>{link.title}</a>
         ))}
         <button className="btn ">Start Free Trial</button>
       </div>
