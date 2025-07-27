@@ -1,10 +1,2 @@
 @import "tailwindcss";
 
-.full-screen-gradient {
-  height: 100vh;
-  width: 100%;
-  background-image:
-    linear-gradient(to right, #E0EFFE,#EEF3FE ,#E2F1FF),
-    linear-gradient(to bottom, #ffff,#EEF3FE,#EEF3FE);
-  background-blend-mode:multiply;
-}
