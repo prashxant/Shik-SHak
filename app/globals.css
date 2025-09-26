@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.card{
+  @apply relative rounded-md my-2 overflow-hidden shadow-sm block 
+}
