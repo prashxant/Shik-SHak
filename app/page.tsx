@@ -1,64 +1,43 @@
-import Image from "next/image"
-import { cn } from "@/lib/utils"
+
 import Link from "next/link"
-
-
 
 export default function Home() {
   return (
-    <div className="h-screen w-full max-w-4xl mx-auto pt-20 pb-10">
-      <Header/>
-      <div className="grid grid-cols-4 gap-4 mt-10">
-      <Column>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-      </Column>
-      <Column>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-      </Column>
-      <Column>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-        <Card href="" src="" alt="" className="bg-amber-100 "/>
-      </Column>
+    <div className="h-screen w-full bg-gradient-to-b from-slate-100 to-slate-200 flex items-center justify-center">
+      <div className="max-w-4xl w-full mx-auto px-6 py-12 text-center relative">
+
+
+        <div className="absolute inset-0 -z-10 flex items-center justify-center">
+          <div className="w-72 h-72 bg-sky-400/20 rounded-full blur-3xl"></div>
+        </div>
+
+
+        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-800 leading-tight mb-6">
+          Hi 👋 I&apos;m <span className="text-sky-600">Prashant</span>
+        </h1>
+
+
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed mb-10">
+          These are some components and landing pages I&apos;ve built <span className="font-semibold text-sky-700">without AI</span>,
+          to brush up my <span className="text-sky-600">Next.js</span>, <span className="text-sky-600">Tailwind</span>, and <span className="text-sky-600">React</span> skills.
+        </p>
+
+
+        <div className="flex gap-4 justify-center">
+          <Link
+            href="/components"
+            className="px-6 py-3 bg-sky-600 text-white font-medium rounded-xl shadow-xl hover:bg-sky-700 transition"
+          >
+            View Components
+          </Link>
+          <Link
+            href="/projects"
+            className="px-6 py-3 border border-sky-600 text-sky-600 font-medium rounded-xl hover:bg-sky-50 transition"
+          >
+            Explore Projects
+          </Link>
+        </div>
       </div>
-      </div>
-  )
-}
-
-
-const Card = ({
-  src,
-  alt,
-  className,
-  href}:{src:string,alt:string,className:string,href:string}) => {
-  return <Link href={href} target="_blank" className="card overlay">
-     <Image
-          src={src}
-           alt={alt}
-            height={500}
-             width={500}
-             className={cn("group-hover:opacity-50",className)}
-             />
-  </Link  >
-}
-
-
-
-const Column = ({children}:{children:React.ReactNode}) =>{
-  return <div> {children} </div>
-}
-
-const Header= () => {
-  return (
-    <div>
-      <h1 className="text-4xl font-bold tracking-tightertext-neutral-700 ">Bento Grids are cool you should try sometimes</h1>
-      <p className="text-base text-neutral-500 max-w-xl mt-4">yeada yada yeada yadayeada yadayeada yadayeada yadayeada yadayeada yadayeada yadayeada yada</p>
     </div>
   )
 }
-
-
