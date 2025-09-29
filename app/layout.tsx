@@ -7,9 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={` antialiased h-screen`}
-      >
+      <body >
         {children}
       </body>
     </html>

@@ -6,7 +6,6 @@ export default function Home() {
     <div className="h-screen w-full bg-gradient-to-b from-slate-100 to-slate-200 flex items-center justify-center">
       <div className="max-w-4xl w-full mx-auto px-6 py-12 text-center relative">
 
-
         <div className="absolute inset-0 -z-10 flex items-center justify-center">
           <div className="w-72 h-72 bg-sky-400/20 rounded-full blur-3xl"></div>
         </div>
