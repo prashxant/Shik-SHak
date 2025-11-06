@@ -9,7 +9,7 @@ export const Navbar = () => {
      href:"/",
       title:"Guide"
    },
-   {
+    {
      href:"/",
       title:"Pricing"
    },
@@ -20,7 +20,7 @@ export const Navbar = () => {
   ]
 
   return (
-   <div className="flex justify-between items-center p-4 ">
+   <div className="flex justify-between items-center  ">
     <Link href="/">
       <Image
       className='flex justify-center items-center'

@@ -1,4 +1,5 @@
 import { Container } from "./component/container";
+import { Footer } from "./component/footer";
 import { Hero } from "./component/hero";
 import { Navbar } from "./component/navbar";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Container>
         <Navbar/>
         <Hero/>
+        <Footer/>
       </Container>
 
     </div>
