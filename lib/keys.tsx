@@ -1,5 +1,6 @@
+import { Globe } from "@/app/component/svg";
+
 export const keys = [
-  // 🔹 Row 1 — Function & Escape Keys
   [
     {
       name: "esc",
@@ -21,29 +22,27 @@ export const keys = [
     { name: "", icon: "", className: "" },
   ],
 
-  // 🔹 Row 2 — Number Row
   [
-    { name: "`", icon: "", className: "" },
-    { name: "1", icon: "", className: "" },
-    { name: "2", icon: "", className: "" },
-    { name: "3", icon: "", className: "" },
-    { name: "4", icon: "", className: "" },
-    { name: "5", icon: "", className: "" },
-    { name: "6", icon: "", className: "" },
-    { name: "7", icon: "", className: "" },
-    { name: "8", icon: "", className: "" },
-    { name: "9", icon: "", className: "" },
-    { name: "0", icon: "", className: "" },
-    { name: "-", icon: "", className: "" },
-    { name: "=", icon: "", className: "" },
+    { name: "`", icon: "~", className: "flex-col" },
+    { name: "1", icon: "!", className: "flex-col" },
+    { name: "2", icon: "@", className: "flex-col" },
+    { name: "3", icon: "#", className: "flex-col" },
+    { name: "4", icon: "$", className: "flex-col" },
+    { name: "5", icon: "%", className: "flex-col" },
+    { name: "6", icon: "^", className: "flex-col" },
+    { name: "7", icon: "&", className: "flex-col" },
+    { name: "8", icon: "*", className: "flex-col" },
+    { name: "9", icon: "(", className: "flex-col" },
+    { name: "0", icon: ")", className: "flex-col" },
+    { name: "-", icon: "_", className: "flex-col" },
+    { name: "=", icon: "+", className: "flex-col" },
     {
       name: "delete",
       icon: "",
-      className: "w-30 justify-start items-end pb-2 pl-4",
+      className: "w-30 justify-end items-end pb-2 pr-4",
     },
   ],
 
-  // 🔹 Row 3 — QWERTY Row
   [
     {
       name: "tab",
@@ -65,9 +64,12 @@ export const keys = [
     { name: "\\", icon: "|", className: "flex-col" },
   ],
 
-  // 🔹 Row 4 — Home Row (ASDF)
   [
-    { name: "Caps Lock", icon: "", className: "w-36" },
+    {
+      name: "caps lock",
+      icon: "",
+      className: "w-33 justify-start items-end pb-2 pl-4",
+    },
     { name: "A", icon: "", className: "" },
     { name: "S", icon: "", className: "" },
     { name: "D", icon: "", className: "" },
@@ -79,12 +81,19 @@ export const keys = [
     { name: "L", icon: "", className: "" },
     { name: ";", icon: "", className: "" },
     { name: "'", icon: "", className: "" },
-    { name: "Enter", icon: "", className: "w-36" },
+    {
+      name: "Enter",
+      icon: "",
+      className: "w-30 justify-end items-end pb-2 pr-4",
+    },
   ],
 
-  // 🔹 Row 5 — Bottom Row (ZXCV)
   [
-    { name: "Shift", icon: "", className: "w-42" },
+    {
+      name: "Shift",
+      icon: "",
+      className: "w-40 justify-start items-end pb-2 pl-4",
+    },
     { name: "Z", icon: "", className: "" },
     { name: "X", icon: "", className: "" },
     { name: "C", icon: "", className: "" },
@@ -95,21 +104,45 @@ export const keys = [
     { name: ",", icon: "", className: "" },
     { name: ".", icon: "", className: "" },
     { name: "/", icon: "", className: "" },
-    { name: "Shift", icon: "", className: "w-42" },
+    {
+      name: "Shift",
+      icon: "",
+      className: "w-40 justify-end items-end pb-2 pr-4",
+    },
   ],
 
-  // 🔹 Row 6 — Spacebar Row
   [
-    { name: "Ctrl", icon: "", className: "" },
-    { name: "Fn", icon: "", className: "" },
-    { name: "Alt", icon: "", className: "" },
-    { name: "Cmd", icon: "", className: "" },
-    { name: "Space", icon: "", className: "w-[23rem]" },
-    { name: "Cmd", icon: "", className: "" },
-    { name: "Alt", icon: "", className: "" },
-    { name: "Left", icon: "", className: "h-9 " },
-    { name: "Down", icon: "", className: "h-9 " },
-    { name: "Up", icon: "", className: "h-9 " },
-    { name: "Right", icon: "", className: "h-9 " },
+    {
+      name: "fn",
+      icon: <Globe />,
+      className: "text-sm justify-between gap-4 pb-1 items-end ",
+    },
+    {
+      name: "control",
+      icon: "^",
+      className: "flex-col text-sm items-start pl-1.5  ",
+    },
+    {
+      name: "option",
+      icon: "⌥",
+      className: " flex-col text-sm items-start pl-1.5 ",
+    },
+    {
+      name: "command",
+      icon: "⌘",
+      className: "w-19 flex-col text-sm items-start pl-1.5 ",
+    },
+    { name: "", icon: "", className: "w-[23rem] " },
+    {
+      name: "command",
+      icon: "⌘",
+      className: "w-19 flex-col text-sm items-end pr-1.5 ",
+    },
+    {
+      name: "option",
+      icon: "⌥",
+      className: "flex-col text-sm items-end pr-1.5 ",
+    },
+    { name: "Left", icon: "", className: "h-9 flex-col" },
   ],
 ];
