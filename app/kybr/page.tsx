@@ -3,7 +3,7 @@ import { Keyboard } from '../component/keyboard'
 
  const page = () => {
   return (
-    <div className="h-screen w-full flex justify-center items-center">
+    <div className="h-screen w-full flex bg-zinc-900 justify-center items-center">
       <Keyboard />
     </div>
   );
