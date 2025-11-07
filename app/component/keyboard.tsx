@@ -5,36 +5,20 @@ import { keys } from "@/lib/keys"
 
 
 
-  const baseStyle = "rounded-md cursor-pointer m-2 hover:scale-110 transition duration-200  size-18 flex justify-center  shadow-lg/50 overflow-hidden shadow-slate-200 hover:shadow-none items-center bg-[#0A090D] text-white";
-
-  const esc = "" //same for delete , tab , esc
-
-  const shift = ""
-
-  const arrow = ""
-
-  const caps = "" //same for caaps and return
-
-  const space = ""
-
-
+ const baseStyle ="m-0.5  flex text-md   items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 hover:scale-95";
 
   return (
-    <div className="w-7xl  bg-zinc-800 rounded-3xlp-4">
-
+    <div className="rounded-xl bg-zinc-800 p-1">
       {keys.map((group, i) => (
-        <div
-          className="flex  gap-2 rounded-md"
-          key={i}
-        >
+        <div className="flex flex-row  rounded-md" key={i}>
           {group.map((key, j) => (
-            <div className={`${baseStyle}   `} key={j}>
-              {key.name}{" "}
+            <div className={`${baseStyle} ${key.className} `} key={j}>
+              <div>{key.icon}</div>
+              <div className="pt-1">{key.name}</div>
             </div>
           ))}
         </div>
       ))}
-
     </div>
   );
 }
