@@ -5,7 +5,7 @@ import { keys } from "@/lib/keys"
 
 
 
-  const baseStyle ="rounded-md size-18 flex justify-center mt-1 shadow-slate-300 items-center bg-[#0A090D] text-white";
+  const baseStyle = "rounded-md cursor-pointer m-2 hover:scale-110 transition duration-200  size-18 flex justify-center  shadow-lg/50 overflow-hidden shadow-slate-200 hover:shadow-none items-center bg-[#0A090D] text-white";
 
   const esc = "" //same for delete , tab , esc
 
@@ -20,20 +20,21 @@ import { keys } from "@/lib/keys"
 
 
   return (
-    <div className="w-7xl rounded-3xl bg-zinc-800 p-4">
-      
+    <div className="w-7xl  bg-zinc-800 rounded-3xlp-4">
+
       {keys.map((group, i) => (
         <div
-          className="flex gap-2 rounded-md  "
+          className="flex  gap-2 rounded-md"
           key={i}
         >
           {group.map((key, j) => (
-            <div className={`${baseStyle} `} key={j}>
+            <div className={`${baseStyle}   `} key={j}>
               {key.name}{" "}
             </div>
           ))}
         </div>
       ))}
+
     </div>
   );
 }
