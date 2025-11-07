@@ -1,0 +1,103 @@
+export const keys = [
+  // 🔹 Row 1 — Function & Escape Keys
+  [
+    { name: "esc", icon: "" },
+    { name: "F1", icon: "" },
+    { name: "F2", icon: "" },
+    { name: "F3", icon: "" },
+    { name: "F4", icon: "" },
+    { name: "F5", icon: "" },
+    { name: "F6", icon: "" },
+    { name: "F7", icon: "" },
+    { name: "F8", icon: "" },
+    { name: "F9", icon: "" },
+    { name: "F10", icon: "" },
+    { name: "F11", icon: "" },
+    { name: "F12", icon: "" },
+    { name: "power", icon: "" },
+  ],
+
+  // 🔹 Row 2 — Number Row
+  [
+    { name: "`", icon: "" },
+    { name: "1", icon: "" },
+    { name: "2", icon: "" },
+    { name: "3", icon: "" },
+    { name: "4", icon: "" },
+    { name: "5", icon: "" },
+    { name: "6", icon: "" },
+    { name: "7", icon: "" },
+    { name: "8", icon: "" },
+    { name: "9", icon: "" },
+    { name: "0", icon: "" },
+    { name: "-", icon: "" },
+    { name: "=", icon: "" },
+    { name: "Backspace", icon: "" },
+  ],
+
+  // 🔹 Row 3 — QWERTY Row
+  [
+    { name: "Tab", icon: "" },
+    { name: "Q", icon: "" },
+    { name: "W", icon: "" },
+    { name: "E", icon: "" },
+    { name: "R", icon: "" },
+    { name: "T", icon: "" },
+    { name: "Y", icon: "" },
+    { name: "U", icon: "" },
+    { name: "I", icon: "" },
+    { name: "O", icon: "" },
+    { name: "P", icon: "" },
+    { name: "[", icon: "" },
+    { name: "]", icon: "" },
+    { name: "\\", icon: "" },
+  ],
+
+  // 🔹 Row 4 — Home Row (ASDF)
+  [
+    { name: "Caps Lock", icon: "" },
+    { name: "A", icon: "" },
+    { name: "S", icon: "" },
+    { name: "D", icon: "" },
+    { name: "F", icon: "" },
+    { name: "G", icon: "" },
+    { name: "H", icon: "" },
+    { name: "J", icon: "" },
+    { name: "K", icon: "" },
+    { name: "L", icon: "" },
+    { name: ";", icon: "" },
+    { name: "'", icon: "" },
+    { name: "Enter", icon: "" },
+  ],
+
+  // 🔹 Row 5 — Bottom Row (ZXCV)
+  [
+    { name: "Shift", icon: "" },
+    { name: "Z", icon: "" },
+    { name: "X", icon: "" },
+    { name: "C", icon: "" },
+    { name: "V", icon: "" },
+    { name: "B", icon: "" },
+    { name: "N", icon: "" },
+    { name: "M", icon: "" },
+    { name: ",", icon: "" },
+    { name: ".", icon: "" },
+    { name: "/", icon: "" },
+    { name: "Shift", icon: "" },
+  ],
+
+  // 🔹 Row 6 — Spacebar Row
+  [
+    { name: "Ctrl", icon: "" },
+    { name: "Fn", icon: "" },
+    { name: "Alt", icon: "" },
+    { name: "Cmd", icon: "" },
+    { name: "Space", icon: "" },
+    { name: "Cmd", icon: "" },
+    { name: "Alt", icon: "" },
+    { name: "Left", icon: "" },
+    { name: "Down", icon: "" },
+    { name: "Up", icon: "" },
+    { name: "Right", icon: "" },
+  ],
+];
