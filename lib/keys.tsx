@@ -96,7 +96,7 @@ export const keys = [
     { name: ";", icon: ":", className: "flex-col" },
     { name: "'", icon: '"', className: "flex-col pt-2" },
     {
-      name: "Enter",
+      name: "return",
       icon: "",
       className: "w-30 justify-end items-end pb-2 pr-4",
     },
@@ -104,7 +104,7 @@ export const keys = [
 
   [
     {
-      name: "Shift",
+      name: "shift",
       icon: "",
       className: "w-40 justify-start items-end pb-2 pl-4",
     },
@@ -119,7 +119,7 @@ export const keys = [
     { name: ".", icon: ">", className: "flex-col" },
     { name: "/", icon: "?", className: "flex-col" },
     {
-      name: "Shift",
+      name: "shift",
       icon: "",
       className: "w-40 justify-end items-end pb-2 pr-4",
     },
