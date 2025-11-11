@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Code2, Sparkles } from "lucide-react";
+import {  Code2, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 

@@ -1,59 +1,29 @@
+import { columns } from "@/lib/img";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const columns = [
-    [
-      { href: "", src: "/images/1.jpg", alt: "Posthog", className: "lg:rounded-tl-[calc(24px-4px)]" },
-      { href: "", src: "/images/2.jpg", alt: "Something" },
-      { href: "", src: "/images/3.jpg", alt: "Something" },
-      { href: "", src: "/images/4.jpg", alt: "Something" },
-      { href: "", src: "/images/5.jpg", alt: "Something" },
-      { href: "", src: "/images/6.jpg", alt: "Something" },
-    ],
-    [
-      { href: "", src: "/images/7.jpg", alt: "Posthog" },
-      { href: "", src: "/images/8.jpg", alt: "Something" },
-      { href: "", src: "/images/9.jpg", alt: "Something" },
-      { href: "", src: "/images/10.jpg", alt: "Something" },
-      { href: "", src: "/images/11.jpg", alt: "Something" },
-      { href: "", src: "/images/12.jpg", alt: "Something" },
-    ],
-    [
-      { href: "", src: "/images/13.jpg", alt: "Posthog" },
-      { href: "", src: "/images/14.jpg", alt: "Posthog" },
-      { href: "", src: "/images/15.jpg", alt: "Posthog" },
-      { href: "", src: "/images/16.jpg", alt: "Posthog" },
-      { href: "", src: "/images/17.jpg", alt: "Posthog" },
-      { href: "", src: "/images/19.jpg", alt: "Something" },
-
-    ],
-    [
-      { href: "", src: "/images/18.jpg", alt: "Posthog", className: "lg:rounded-tr-[calc(24px-4px)]" },
-      { href: "", src: "/images/19.jpg", alt: "Something" },
-      { href: "", src: "/images/20.jpg", alt: "Something" },
-      { href: "", src: "/images/21.jpg", alt: "Something" },
-      { href: "", src: "/images/22.jpg", alt: "Something" },
-
-    ],
-  ];
 
   return (
-    <div className="h-screen w-full max-w-4xl mx-auto pt-20 pb-10 px-4 md:px-8">
-      <Header />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 my-10 p-1 mask-b-from-80% rounded-3xl">
-        {columns.map((cards, colIndex) => (
-          <Column  key={colIndex}>
-            {cards.map((card, i) => (
-              <Card key={i} {...card} />
-            ))}
-          </Column>
-        ))}
+    <div className="bg-[url('/bggrain.png')] bg-cover">
+      <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
+        <Header />
+        <div className="my-10 grid grid-cols-1 gap-2 rounded-3xl mask-b-from-80% p-1 md:grid-cols-2 lg:grid-cols-4">
+          {columns.map((cards, colIndex) => (
+            <Column key={colIndex}>
+              {cards.map((card, i) => (
+                <Card key={i} {...card} />
+              ))}
+            </Column>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
+
+
 
 const Card = ({
   src,
