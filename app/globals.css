@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
 
-
-
-.card {
-  @apply relative mb-2 max-w-xl mx-auto overflow-hidden shadow-sm block transition-all duration-200
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-.overlay {
-  @apply after:content-[''] after:absolute after:bg-black after:opacity-0 after:w-full after:h-full after:inset-0 hover:after:opacity-90 after:transition-all after:duration-200
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media(prefers-color-scheme: dark){
+:root {
+  --foreground: #ffffff;
+  --background: #171717;
+}
 }

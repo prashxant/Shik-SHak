@@ -6,9 +6,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning >
+    <html lang="en" suppressHydrationWarning >
       <body className="" >
-        {children}
+       <main className="bg-background text-foreground">{children}</main>
       </body>
     </html>
   );
