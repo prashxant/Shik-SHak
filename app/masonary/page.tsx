@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <div className="bg-[url('/bggrain.png')] bg-cover">
+    <div className=" bg-[url('/bggrain.png')] bg-cover">
       <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
         <Header />
         <div className="my-10 grid grid-cols-1 gap-2 rounded-3xl mask-b-from-80% p-1 md:grid-cols-2 lg:grid-cols-4">
