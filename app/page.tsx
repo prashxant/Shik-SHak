@@ -1,8 +1,19 @@
+
+import { Container } from "./component/container";
+
 export default function Home() {
+
   return (
-    <div className="relative flex h-full w-full items-center justify-center">
-      <Pattern />
-      <div className="h-80 relative z-10 w-40 border bg-white border-neutral-200 shadow-2xl rounded-xl"> </div>
+    <div className="h-screen w-full">
+      <Container className="max-w-3xl text-black mt-10">
+        <h1 className="text-4xl font-bold tracking-tighter text-neutral-700">
+         Hi Prashnt here
+        </h1>
+        <p className="mt-4 max-w-xl text-base text-neutral-500">
+          This quest of pages are made by me to to see what i have learn from Tailwind in Nextjs
+        </p>
+        <Circle/>
+      </Container>
     </div>
   );
 }
@@ -10,11 +21,12 @@ export default function Home() {
 
 
 
+const Circle = () => {
 
+//diff color in arr.map for each component and everthing 
 
+  return (<div className="bg-amber-200 size-24 rounded-full">
 
-const Pattern = () => {
-  return (
-    <div className="pointer-events-none absolute inset-0 z-0 m-auto rounded-lg bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
-  );
+  </div>
+  )
 }

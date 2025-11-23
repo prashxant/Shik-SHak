@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning >
-      <body className="antialiased [--pattern-fg:var(--color-neutral-900)]/5" >
+      <body className="antialiased [--pattern-fg:var(--color-neutral-900)]/[0.02]" >
        <main className=" text-foreground h-screen">{children}</main>
       </body>
     </html>
