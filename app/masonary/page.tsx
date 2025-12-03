@@ -2,13 +2,20 @@ import { columns } from "@/lib/img";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { Header } from "../component/header";
 
 export default function Home() {
 
   return (
-    <div className=" bg-[url('/bggrain.png')] bg-cover">
-      <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
-        <Header />
+    <div className="bg-[url('/bggrain.png')] bg-cover">
+      <div className="mx-auto w-full max-w-4xl  px-4 pt-20 pb-10 md:px-8">
+        <Header
+          heading="Bento grids are cool, you should try it sometimes."
+          discription="
+              Discover innovative solutions that transform the way you work and create.
+              Our cutting-edge tools are designed to empower your creativity and boost
+              your productivity like never before."
+        />
         <div className="my-10 grid grid-cols-1 gap-2 rounded-3xl mask-b-from-80% p-1 md:grid-cols-2 lg:grid-cols-4">
           {columns.map((cards, colIndex) => (
             <Column key={colIndex}>
@@ -62,15 +69,6 @@ const Column = ({ children }: { children: React.ReactNode }) => (
   <div className="flex flex-col gap-2">{children}</div>
 );
 
-const Header = () => (
-  <>
-    <h1 className="text-4xl font-bold tracking-tighter text-neutral-700">
-      Bento grids are cool, you should try it sometimes.
-    </h1>
-    <p className="text-base text-neutral-500 max-w-xl mt-4">
-      Discover innovative solutions that transform the way you work and create.
-      Our cutting-edge tools are designed to empower your creativity and boost
-      your productivity like never before.
-    </p>
-  </>
-);
+
+
+
