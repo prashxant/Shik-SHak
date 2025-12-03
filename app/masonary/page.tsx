@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="bg-[url('/bggrain.png')] bg-cover">
-      <div className="mx-auto w-full max-w-4xl  px-4 pt-20 pb-10 md:px-8">
+      <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
         <Header
           heading="Bento grids are cool, you should try it sometimes."
           discription="

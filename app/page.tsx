@@ -2,8 +2,24 @@
 import Link from "next/link";
 import { Container } from "./component/container";
 import { Header } from "./component/header";
+import { div } from "framer-motion/client";
 
 export default function Home() {
+
+  const Sites = [
+    {
+      title: " Mac Keyboard",
+      herf: "./kybr",
+    },
+    {
+      title: "Finta's Landing Page",
+      herf: "./finta",
+    },
+    {
+      title: "Bento Grid",
+      herf: "./masonary",
+    },
+  ];
 
 
 
@@ -11,31 +27,22 @@ export default function Home() {
     <div className="h-screen w-full bg-black">
       <Container>
         <Header
+          className="pt-20"
+          disclassName="font-bold pb-4"
           heading="Hi , I am Prashant"
-          discription="Collection of Componests I built using Next.js Tailwind or frontend work"
+          discription="This is a small Collection of Components/Langing Pages I built using Next.js Tailwind or frontend work"
         />
-        <div className="flex flex-col justify-center pt-2 text-neutral-500">
-          <span>
-            <Link
-              className="rounded-md px-4 py-2 text-2xl font-semibold shadow-slate-400 transition duration-300 hover:shadow-xl/30 hover:text-neutral-200"
-              href="./kybr"
-            >
-              Mac Keyboard
-            </Link>
-          </span>
-
-          <Link
-            className="rounded-md px-4 py-2 text-2xl font-semibold shadow-slate-400 hover:shadow-xl/30"
-            href="./finta"
-          >
-            Finta&apos;s Landing Page
-          </Link>
-          <Link
-            className="rounded-md px-4 py-2 text-2xl font-semibold shadow-slate-400 hover:shadow-xl/30"
-            href="./masonary"
-          >
-            Bento Grid
-          </Link>
+        <div className="flex flex-col gap-6 pt-10">
+          {Sites.map((site, idx) => (
+            <div key={idx}>
+              <Link
+                className="font-semibold rounded-md px-2 text-4xl hover:shadow-2xl shadow-slate-500/80 text-neutral-600 transition duration-300 hover:text-neutral-200"
+                href={site.herf}
+              >
+                {site.title}
+              </Link>
+            </div>
+          ))}
         </div>
       </Container>
     </div>
