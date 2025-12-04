@@ -32,11 +32,11 @@ export default function Home() {
           heading="Hi , I am Prashant"
           discription="This is a small Collection of Components/Langing Pages I built using Next.js Tailwind or frontend work"
         />
-        <div className="flex flex-col gap-6 pt-10">
+        <div className="flex flex-col gap-10 pt-10">
           {Sites.map((site, idx) => (
-            <div key={idx}>
+            <div className="transition duration-200 hover:scale-110" key={idx}>
               <Link
-                className="font-semibold rounded-md px-2 text-4xl hover:shadow-2xl shadow-slate-500/80 text-neutral-600 transition duration-300 hover:text-neutral-200"
+                className="rounded-md border-2 border-neutral-700 px-4 py-2 text-4xl font-semibold text-neutral-600 shadow-slate-500/80 transition duration-300 hover:text-neutral-200 hover:shadow-2xl"
                 href={site.herf}
               >
                 {site.title}
