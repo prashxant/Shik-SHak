@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Container } from "./component/container";
 import { Header } from "./component/header";
-import { div } from "framer-motion/client";
+
 
 export default function Home() {
 
