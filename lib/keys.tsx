@@ -12,7 +12,7 @@ import {
   Ten,
   Twleve,
   Eleven,
-} from "@/app/component/svg";
+} from "@/app/component/kybr/svg";
 
 export const keys = [
   [

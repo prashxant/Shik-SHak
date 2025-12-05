@@ -1,5 +1,5 @@
 import React from 'react'
-import { Keyboard } from '../component/keyboard'
+import { Keyboard } from '../component/kybr/keyboard'
 
  const page = () => {
   return (

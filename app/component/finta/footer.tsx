@@ -30,7 +30,7 @@ export const Footer = () => {
       <h1 className="text-sm px-4 font-medium">Magically simplify accounting and taxes.</h1>
     </Link>
 
-    <div className="flex items-center gap-x-2">
+    <div className="flex items-baseline gap-x-2">
       {Socials.map(({ href, logo, alt }, i) => (
         <Link href={href} key={i}>
           <Image src={logo} alt={alt} width={30} height={20} />

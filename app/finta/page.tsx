@@ -1,7 +1,8 @@
 import { Container } from "../component/container";
-import { Footer } from "../component/footer";
-import { Hero } from "../component/hero";
-import { Navbar } from "../component/navbar";
+import { Footer } from "../component/finta/footer";
+import { Hero } from "../component/finta/hero";
+import { Inception } from "../component/finta/inception";
+import { Navbar } from "../component/finta/navbar";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Container>
         <Navbar/>
         <Hero/>
+        <Inception/>
         <Footer/>
       </Container>
 
