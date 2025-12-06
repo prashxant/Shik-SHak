@@ -23,9 +23,9 @@
 
 @theme{
 
-  --animate-marque: marque 7s linear infinite;
+  --animate-marque: marque 30s linear infinite;
 
-@keyframes marque {
+@keyframes marque  {
 
   from{
   transform: translateX(100%)

@@ -6,7 +6,7 @@ import Image from "next/image"
   return (
 
 
-      <div className="my-20 flex w-full flex-col items-center px-4 py-2">
+      <div className="mt-20 flex w-full flex-col items-center px-4 py-2">
         <button className="cursor-pointer rounded-full border border-gray-200 bg-gray-100 px-4 py-1 text-gray-600 shadow-sm transition duration-200 hover:bg-gray-200">
           What are early stage requirements?
         </button>
