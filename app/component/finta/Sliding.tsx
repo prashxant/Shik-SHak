@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import React from 'react'
 
 export const Sliding = () => {
   return (
-    <div className=" flex flex-col items-center justify-center overflow-hidden  mask-x-from-70% mask-x-to-95%">
-      <h2 className="text-sm font-medium text-neutral-800">
+    <div className=" flex flex-col items-center py-20  justify-center overflow-hidden  mask-x-from-70% mask-x-to-95%">
+      <h2 className="text-sm font-medium pb-8 text-neutral-800">
         Trusted by fast-growing startups
       </h2>
       <Slider />
@@ -29,7 +28,7 @@ const Slider = () =>{
     const loopLogos = [...Logo, ...Logo];
 
 return (
-  <div className="animate-marque flex gap-15 py-10">
+  <div className="animate-marque flex gap-15 ">
     {loopLogos.map((item, index) => (
       <Image
 

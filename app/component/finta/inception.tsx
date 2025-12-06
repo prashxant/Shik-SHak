@@ -3,7 +3,7 @@ import { FintaHeading } from './heading';
 
 export const Inception = () => {
   return (
-    <div className="p-10 flex flex-col items-center justify-center">
+    <div className=" flex flex-col items-center justify-center">
       <FintaHeading
         headingBlack="Pricing for "
         headingBlue="inception to scale"
@@ -21,8 +21,8 @@ export const Inception = () => {
 
 const TaxSlider = () => {
   return (
-    <div className="my-10 flex cursor-pointer items-center justify-center rounded-[6px] bg-neutral-200 text-[14px] font-medium text-neutral-800">
-      <button className="m-0.5 cursor-pointer rounded-[6px] border border-neutral-300 bg-white px-2 shadow">
+    <div className="my-10 flex cursor-pointer items-center justify-center rounded-md bg-neutral-200 text-[14px] font-medium text-neutral-800">
+      <button className="m-0.5 cursor-pointer rounded-md border border-neutral-300 bg-white px-2 shadow">
         Taxes
       </button>
       <button className="cursor-pointer  px-2">Accounting</button>

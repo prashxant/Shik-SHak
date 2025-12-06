@@ -20,7 +20,7 @@ export const Navbar = () => {
   ]
 
   return (
-   <div className="flex justify-between items-center  ">
+   <div className="flex pt-5 justify-between items-center  ">
     <Link href="/">
       <Image
       className='flex justify-center items-center'

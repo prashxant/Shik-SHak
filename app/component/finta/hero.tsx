@@ -6,7 +6,7 @@ import Image from "next/image"
   return (
 
 
-      <div className="mt-20 flex w-full flex-col items-center px-4 py-2">
+      <div  className="mt-20 flex w-full flex-col items-center px-4 ">
         <button className="cursor-pointer rounded-full border border-gray-200 bg-gray-100 px-4 py-1 text-gray-600 shadow-sm transition duration-200 hover:bg-gray-200">
           What are early stage requirements?
         </button>
@@ -30,7 +30,7 @@ import Image from "next/image"
         </div>
         <div className="mx-auto mt-30 max-w-5xl">
           <Image
-            className="w-full rounded-xl border-neutral-200 to-100% mask-b-from-0% object-cover object-left-top shadow-md"
+            className="w-full rounded-xl border-neutral-200 to-100% mask-b-from-0% object-cover object-top-left shadow-md"
             src="/hh.webp"
             alt="dashboard"
             height={1000}
