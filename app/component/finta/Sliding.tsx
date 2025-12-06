@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export const Sliding = () => {
   return (
-    <div className=" flex flex-col items-center py-20  justify-center overflow-hidden  mask-x-from-70% mask-x-to-95%">
-      <h2 className="text-sm font-medium pb-8 text-neutral-800">
+    <div className=" flex flex-col items-center pb-15  justify-center overflow-hidden  mask-x-from-70% mask-x-to-95%">
+      <h2 className="text-md font-medium pb-10 text-neutral-800">
         Trusted by fast-growing startups
       </h2>
       <Slider />

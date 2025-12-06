@@ -9,18 +9,22 @@ import { Testimonial } from "../component/finta/Testimonial";
 
 export default function Home() {
   return (
-    <div className="[background:radial-gradient(125%_100%_at_50%_0%,#FFF_6.32%,#E0F0FF_29.28%,#E7EFFD_68.68%,#FFFFFF_100%)]">
-      <Container>
-        <Navbar />
-        <Hero />
-        <Sliding />
-      </Container>
-      <Testimonial/>
-      <Inception />
-      <Container>
-        <Footer />
-      </Container>
-    </div>
+    <>
+      <div>
+        <div className="[background:radial-gradient(125%_100%_at_50%_0%,#FFF_6.32%,#E0F0FF_29.28%,#E7EFFD_68.68%,#FFFFFF_100%)]">
+          <Container>
+            <Navbar />
+            <Hero />
+            <Sliding />
+          </Container>
+        </div>
+        <Testimonial />
+        <Inception />
+        <Container>
+          <Footer />
+        </Container>
+      </div>
+    </>
   );
 }
 
