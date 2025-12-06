@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Sliding = () => {
   return (
-    <div className="mb-20 flex flex-col items-center justify-center overflow-hidden mask-x-from-70% mask-x-to-95%">
+    <div className=" flex flex-col items-center justify-center overflow-hidden  mask-x-from-70% mask-x-to-95%">
       <h2 className="text-sm font-medium text-neutral-800">
         Trusted by fast-growing startups
       </h2>
@@ -32,7 +32,7 @@ return (
   <div className="animate-marque flex gap-15 py-10">
     {loopLogos.map((item, index) => (
       <Image
-        
+
         loading="lazy"
         key={index}
         alt={item.alt}
