@@ -3,7 +3,7 @@ import { FintaHeading } from './heading';
 
 export const Inception = () => {
   return (
-    <div className="bg-p-10 flex flex-col items-center justify-center">
+    <div className="p-10 flex flex-col items-center justify-center">
       <FintaHeading
         headingBlack="Pricing for "
         headingBlue="inception to scale"
