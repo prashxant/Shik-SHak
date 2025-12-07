@@ -1,22 +1,42 @@
 import Image from "next/image";
+import { testimonialsSet1,testimonialsSet2,testimonialsSet3 } from "@/lib/testimonial";
 
+
+
+const allSet = [testimonialsSet1,testimonialsSet2,testimonialsSet3]
 
 export const TestimonialBento = () => {
+
   return (
-    <div>
-      <Ucard testimonial="my name is prashant" name="Prahant" description="description" pfp="/finta.svg" alt="dd" />
+    <div className="flex gap-6">
+      {allSet.map((column, idx) => (
+        <div key={idx} className="flex w-full flex-col gap-6">
+          {column.map((item, idxx) => (
+            <Ucard
+              alt={item.alt}
+              key={idxx}
+              testimonial={item.testimonial}
+              name={item.name}
+              description={item.description}
+              pfp={item.pfp}
+            />
+          ))}
+        </div>
+      ))}
     </div>
-  )
+  );
+
 }
 
 
 type UcardProps = {
-  testimonial:string,
-  name: string,
-  description: string,
-  pfp: string
-  alt: string
-}
+  testimonial: string;
+  name: string;
+  description: string;
+  pfp: string;
+  alt: string;
+
+};
 
 
 const Ucard = ({testimonial,name,description,pfp,alt}:UcardProps) => {
