@@ -6,7 +6,7 @@ import { TestimonialBento } from './TestimonialBento';
 
 export const Testimonial = () => {
   return (
-    <div className="width-full h-[70vw] mask-b-from-0.5  overflow-hidden border-neutral-20 pt-10 bg-neutral-100">
+    <div className="width-full h-[70vw] mask-b-from-0.5  overflow-hidden border-neutral-20 pt-5 bg-neutral-100">
       <Container>
         <FintaHeading
           headingBlack="Built for"

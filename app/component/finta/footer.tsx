@@ -23,7 +23,7 @@ export const Footer = () => {
   ]
 
   return (
-    <div className="flex flex-col justify-between px-4">
+    <div className="flex flex-col pb-10 justify-between px-4">
   <div className="flex justify-between items-center">
     <Link href="/" className="flex items-center">
       <Image src="/image.png" width={20} height={38} alt="footer-logo" />
