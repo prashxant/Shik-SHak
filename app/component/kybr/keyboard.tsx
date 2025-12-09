@@ -14,7 +14,7 @@ import { keys } from "@/lib/keys";
 
   return (
     <div
-      className="rounded-2xl bg-zinc-800 p-2 shadow-xl shadow-sky-300/50"
+      className="rounded-2xl bg-zinc-800 p-2  shadow-xl shadow-sky-300/50"
     >
       {keys.map((group, i) => (
         <div className="flex flex-row rounded-md" key={i}>
