@@ -50,6 +50,7 @@ const Card = ({
       className={cn("relative group rounded-md block overflow-hidden", className)}
     >
       <Image
+        priority
         src={src}
         alt={alt}
         height={500}
