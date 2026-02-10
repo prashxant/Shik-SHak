@@ -1,3 +1,12 @@
+export const ParentKeyboardStyle =
+  "rounded-2xl bg-zinc-800 p-2 rotate-90 scale-50 md:rotate-0 md:scale-75 lg:scale-100  shadow-xl shadow-sky-300/50";
+
+export const baseStyle =
+  "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 hover:scale-95";
+
+export const arrowStyle =
+  "flex text-md   items-center justify-center h-8 w-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 hover:scale-95";
+
 import {
   Globe,
   One,
@@ -13,150 +22,97 @@ import {
   Twleve,
   Eleven,
 } from "@/component/kybr/svg";
+import { ReactNode } from "react";
 
-export const keys = [
+type KeyConfig = {
+  name: string;
+  icon?: ReactNode | string;
+  className?: string;
+};
+
+const key = (
+  name: string,
+  icon: ReactNode | string = "",
+  className = "",
+): KeyConfig => ({ name, icon, className });
+
+const wide = (name: string, className: string): KeyConfig =>
+  key(name, "", className);
+
+export const keys: KeyConfig[][] = [
+
   [
-    {
-      name: "esc",
-      icon: "",
-      className: "w-30 justify-start items-end pb-2 pl-4 ",
-    },
-    { name: "F1", icon: <One />, className: "flex-col text-sm" },
-    { name: "F2", icon: <Two />, className: "flex-col text-sm" },
-    { name: "F3", icon: <Three />, className: "flex-col text-sm" },
-    { name: "F4", icon: <Four />, className: "flex-col text-sm" },
-    { name: "F5", icon: <Five />, className: "flex-col text-sm" },
-    { name: "F6", icon: <Six />, className: "flex-col text-sm" },
-    { name: "F7", icon: <Seven />, className: "flex-col text-sm" },
-    { name: "F8", icon: <Eight />, className: "flex-col text-sm" },
-    { name: "F9", icon: <Nine />, className: "flex-col text-sm" },
-    { name: "F10", icon: <Ten />, className: "flex-col text-sm" },
-    { name: "F11", icon: <Eleven />, className: "flex-col text-sm" },
-    { name: "F12", icon: <Twleve />, className: "flex-col text-sm" },
-    { name: "", icon: "", className: "flex-col " },
+    wide("esc", "w-30 justify-start items-end pb-2 pl-4"),
+    key("F1", <One />, "flex-col text-sm"),
+    key("F2", <Two />, "flex-col text-sm"),
+    key("F3", <Three />, "flex-col text-sm"),
+    key("F4", <Four />, "flex-col text-sm"),
+    key("F5", <Five />, "flex-col text-sm"),
+    key("F6", <Six />, "flex-col text-sm"),
+    key("F7", <Seven />, "flex-col text-sm"),
+    key("F8", <Eight />, "flex-col text-sm"),
+    key("F9", <Nine />, "flex-col text-sm"),
+    key("F10", <Ten />, "flex-col text-sm"),
+    key("F11", <Eleven />, "flex-col text-sm"),
+    key("F12", <Twleve />, "flex-col text-sm"),
+    key(""),
   ],
 
-  [
-    { name: "`", icon: "~", className: "flex-col" },
-    { name: "1", icon: "!", className: "flex-col" },
-    { name: "2", icon: "@", className: "flex-col" },
-    { name: "3", icon: "#", className: "flex-col" },
-    { name: "4", icon: "$", className: "flex-col" },
-    { name: "5", icon: "%", className: "flex-col" },
-    { name: "6", icon: "^", className: "flex-col" },
-    { name: "7", icon: "&", className: "flex-col" },
-    { name: "8", icon: "*", className: "flex-col" },
-    { name: "9", icon: "(", className: "flex-col" },
-    { name: "0", icon: ")", className: "flex-col" },
-    { name: "-", icon: "_", className: "flex-col" },
-    { name: "=", icon: "+", className: "flex-col" },
-    {
-      name: "delete",
-      icon: "",
-      className: "w-30 justify-end items-end pb-2 pr-4",
-    },
-  ],
 
   [
-    {
-      name: "tab",
-      icon: "",
-      className: "w-30 justify-start items-end pb-2 pl-4",
-    },
-    { name: "Q", icon: "", className: "" },
-    { name: "W", icon: "", className: "" },
-    { name: "E", icon: "", className: "" },
-    { name: "R", icon: "", className: "" },
-    { name: "T", icon: "", className: "" },
-    { name: "Y", icon: "", className: "" },
-    { name: "U", icon: "", className: "" },
-    { name: "I", icon: "", className: "" },
-    { name: "O", icon: "", className: "" },
-    { name: "P", icon: "", className: "" },
-    { name: "[", icon: "{", className: "flex-col" },
-    { name: "]", icon: "}", className: "flex-col" },
-    { name: "\\", icon: "|", className: "flex-col" },
+    key("`", "~", "flex-col"),
+    key("1", "!", "flex-col"),
+    key("2", "@", "flex-col"),
+    key("3", "#", "flex-col"),
+    key("4", "$", "flex-col"),
+    key("5", "%", "flex-col"),
+    key("6", "^", "flex-col"),
+    key("7", "&", "flex-col"),
+    key("8", "*", "flex-col"),
+    key("9", "(", "flex-col"),
+    key("0", ")", "flex-col"),
+    key("-", "_", "flex-col"),
+    key("=", "+", "flex-col"),
+    wide("delete", "w-30 justify-end items-end pb-2 pr-4"),
   ],
 
-  [
-    {
-      name: "caps lock",
-      icon: "",
-      className: "w-33 justify-start items-end pb-2 pl-4",
-    },
-    { name: "A", icon: "", className: "" },
-    { name: "S", icon: "", className: "" },
-    { name: "D", icon: "", className: "" },
-    { name: "F", icon: "", className: "" },
-    { name: "G", icon: "", className: "" },
-    { name: "H", icon: "", className: "" },
-    { name: "J", icon: "", className: "" },
-    { name: "K", icon: "", className: "" },
-    { name: "L", icon: "", className: "" },
-    { name: ";", icon: ":", className: "flex-col" },
-    { name: "'", icon: '"', className: "flex-col pt-2" },
-    {
-      name: "return",
-      icon: "",
-      className: "w-30 justify-end items-end pb-2 pr-4",
-    },
-  ],
 
   [
-    {
-      name: "shift",
-      icon: "",
-      className: "w-40 justify-start items-end pb-2 pl-4",
-    },
-    { name: "Z", icon: "", className: "" },
-    { name: "X", icon: "", className: "" },
-    { name: "C", icon: "", className: "" },
-    { name: "V", icon: "", className: "" },
-    { name: "B", icon: "", className: "" },
-    { name: "N", icon: "", className: "" },
-    { name: "M", icon: "", className: "" },
-    { name: ",", icon: "<", className: "flex-col" },
-    { name: ".", icon: ">", className: "flex-col" },
-    { name: "/", icon: "?", className: "flex-col" },
-    {
-      name: "shift",
-      icon: "",
-      className: "w-40 justify-end items-end pb-2 pr-4",
-    },
+    wide("tab", "w-30 justify-start items-end pb-2 pl-4"),
+    ...["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"].map((k) => key(k)),
+    key("[", "{", "flex-col"),
+    key("]", "}", "flex-col"),
+    key("\\", "|", "flex-col"),
   ],
 
+
   [
-    {
-      name: "fn",
-      icon: <Globe />,
-      className: "text-sm justify-between gap-4 pb-1 items-end ",
-    },
-    {
-      name: "control",
-      icon: "^",
-      className: "flex-col text-sm items-start pl-1.5  ",
-    },
-    {
-      name: "option",
-      icon: "⌥",
-      className: " flex-col text-sm items-start pl-1.5 ",
-    },
-    {
-      name: "command",
-      icon: "⌘",
-      className: "w-19 flex-col text-sm items-start pl-1.5 ",
-    },
-    { name: "", icon: "", className: "w-[23rem] " },
-    {
-      name: "command",
-      icon: "⌘",
-      className: "w-19 flex-col text-sm items-end pr-1.5 ",
-    },
-    {
-      name: "option",
-      icon: "⌥",
-      className: "flex-col text-sm items-end pr-1.5 ",
-    },
-    { name: "Left", icon: "", className: "h-9 flex-col" },
+    wide("caps lock", "w-33 justify-start items-end pb-2 pl-4"),
+    ...["A", "S", "D", "F", "G", "H", "J", "K", "L"].map((k) => key(k)),
+    key(";", ":", "flex-col"),
+    key("'", `"`, "flex-col pt-2"),
+    wide("return", "w-30 justify-end items-end pb-2 pr-4"),
+  ],
+
+
+  [
+    wide("shift", "w-40 justify-start items-end pb-2 pl-4"),
+    ...["Z", "X", "C", "V", "B", "N", "M"].map((k) => key(k)),
+    key(",", "<", "flex-col"),
+    key(".", ">", "flex-col"),
+    key("/", "?", "flex-col"),
+    wide("shift", "w-40 justify-end items-end pb-2 pr-4"),
+  ],
+
+
+  [
+    key("fn", <Globe />, "text-sm justify-between gap-4 pb-1 items-end"),
+    key("control", "^", "flex-col text-sm items-start pl-1.5"),
+    key("option", "⌥", "flex-col text-sm items-start pl-1.5"),
+    key("command", "⌘", "w-19 flex-col text-sm items-start pl-1.5"),
+    key("", "", "w-[23rem]"),
+    key("command", "⌘", "w-19 flex-col text-sm items-end pr-1.5"),
+    key("option", "⌥", "flex-col text-sm items-end pr-1.5"),
+    key("Left", "", "h-9 flex-col"),
   ],
 ];
