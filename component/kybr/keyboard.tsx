@@ -52,10 +52,10 @@ export const Screen = ({
           <motion.div
             key={flashKey.id}
             initial={{ scale: 0.6, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            animate={{ scale: 0.8, opacity: 1 }}
             exit={{ scale: 1, opacity: 0 }}
             transition={{
-              duration: 0.6,
+              duration: 0.1,
               ease: "easeOut",
             }}
             className="absolute inset-0 flex items-center justify-center font-pixel-circle text-6xl text-white-400"
