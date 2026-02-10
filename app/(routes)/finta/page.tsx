@@ -1,10 +1,11 @@
-import { Container } from "../../component/container";
-import { Footer } from "../../component/finta/footer";
-import { Hero } from "../../component/finta/hero";
-import { Inception } from "../../component/finta/inception";
-import { Navbar } from "../../component/finta/navbar";
-import { Sliding } from "../../component/finta/Sliding";
-import { Testimonial } from "../../component/finta/Testimonial";
+import { Container } from "@/component/container";
+import { Footer } from "@/component/finta/footer";
+import { Hero } from "@/component/finta/hero";
+import { Inception } from "@/component/finta/inception";
+import { Navbar } from "@/component/finta/navbar";
+import { Sliding } from "@/component/finta/Sliding";
+import { Testimonial } from "@/component/finta/Testimonial";
+
 
 export default function Home() {
   return (
@@ -14,11 +15,11 @@ export default function Home() {
           <Container>
             <Navbar />
             <Hero />
-            <Sliding />
+            <Sliding/>
           </Container>
         </div>
         <Testimonial />
-        <Inception />
+        <Inception/>
         <Container>
           <Footer />
         </Container>

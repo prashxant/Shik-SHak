@@ -1,5 +1,5 @@
 "use client";
-
+import { motion, AnimatePresence } from "framer-motion";
 import { arrowStyle, baseStyle, keys, ParentKeyboardStyle } from "@/lib/keys";
 import { useState } from "react";
 
@@ -13,39 +13,60 @@ const playSound = (keyName: string) => {
 };
 
 export const Keyboard = () => {
-  const [typedText, setTypedText] = useState("");
+  const [flashKey, setFlashKey] = useState<{
+    value: string;
+    id: number;
+  } | null>(null);
 
   const handleKeyPress = (keyName: string) => {
-    playSound(keyName)
-    switch (keyName) {
-      case "Backspace":
-        setTypedText((prev) => prev.slice(0, -1));
-        break;
-      case "Space":
-        setTypedText((prev) => prev + " ");
-        break;
-      case "Enter":
-        setTypedText((prev) => prev + "\n");
-        break;
-      default:
-        setTypedText((prev) => prev + keyName);
-    }
+    let display = keyName;
+    playSound(keyName);
+
+    if (keyName === "Space") display = "␣";
+    if (keyName === "Enter") display = "⏎";
+    if (keyName === "Backspace") display = "⌫";
+
+    setFlashKey({
+      value: display,
+      id: Date.now(),
+    });
   };
 
   return (
     <div className="flex flex-col gap-4">
-      <Screen typedText={typedText} />
+      <Screen flashKey={flashKey} />
       <KeyboardKeys onKeyPress={handleKeyPress} />
     </div>
   );
 };
-export const Screen = ({ typedText }: { typedText: string }) => {
+
+export const Screen = ({
+  flashKey,
+}: {
+  flashKey: { value: string; id: number } | null;
+}) => {
   return (
-    <div className=" bg-black mx-auto rounded-xl  p-4 font-mono shadow-inner">
-      {typedText || "Type something..."}
+   <div className="relative mx-auto  flex h-32 w-64 items-center justify-center overflow-hidden rounded-xl p-8 ">
+      <AnimatePresence>
+        {flashKey && (
+          <motion.div
+            key={flashKey.id}
+            initial={{ scale: 0.6, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 1, opacity: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+            }}
+            className="absolute inset-0 flex items-center justify-center font-pixel-circle text-6xl text-white-400"
+          >
+            {flashKey.value}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
-}
+};
 
 export const KeyboardKeys = ({
   onKeyPress,
