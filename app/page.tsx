@@ -16,6 +16,10 @@ export default function Home() {
       title: "Bento Grid",
       herf: "./masonary",
     },
+    {
+      title: "Globe Component",
+      herf: "https://globecomponent.netlify.app/",
+    },
   ];
   return (
     <div className="h-screen w-full bg-black">
