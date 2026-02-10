@@ -1,11 +1,8 @@
-
 import Link from "next/link";
-import { Container } from "./component/container";
-import { Header } from "./component/header";
-
+import { Container } from "../component/container";
+import { Header } from "../component/header";
 
 export default function Home() {
-
   const Sites = [
     {
       title: " Mac Keyboard",
@@ -32,7 +29,8 @@ export default function Home() {
         <div className="flex flex-col gap-10 pt-10">
           {Sites.map((site, idx) => (
             <div className="transition duration-200 hover:scale-110" key={idx}>
-              <Link prefetch
+              <Link
+                prefetch
                 className="rounded-md border-2 border-neutral-700 px-4 py-2 text-4xl font-semibold text-neutral-600 shadow-slate-500/80 transition duration-300 hover:text-neutral-200 hover:shadow-2xl"
                 href={site.herf}
               >
@@ -44,5 +42,4 @@ export default function Home() {
       </Container>
     </div>
   );
-
 }

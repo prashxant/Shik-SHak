@@ -2,10 +2,9 @@ import { columns } from "@/lib/img";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "../component/header";
+import { Header } from "../../../component/header";
 
 export default function Home() {
-
   return (
     <div className="bg-bg1 bg-cover">
       <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
@@ -30,8 +29,6 @@ export default function Home() {
   );
 }
 
-
-
 const Card = ({
   src,
   alt,
@@ -47,7 +44,10 @@ const Card = ({
     <Link
       href={href || "#"}
       target="_blank"
-      className={cn("relative group rounded-md block overflow-hidden", className)}
+      className={cn(
+        "group relative block overflow-hidden rounded-md",
+        className,
+      )}
     >
       <Image
         priority
@@ -58,7 +58,7 @@ const Card = ({
         className="w-full object-cover transition-transform duration-300 group-hover:scale-105"
       />
       {href && (
-        <p className="absolute inset-0 flex justify-center items-center text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-200 bg-black/40">
+        <p className="absolute inset-0 flex items-center justify-center bg-black/40 text-sm font-medium text-white opacity-0 transition-all duration-200 group-hover:opacity-100">
           {href.replace("https://", "") || "View"}
         </p>
       )}
@@ -69,7 +69,3 @@ const Card = ({
 const Column = ({ children }: { children: React.ReactNode }) => (
   <div className="flex flex-col gap-2">{children}</div>
 );
-
-
-
-
