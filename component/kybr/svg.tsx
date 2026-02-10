@@ -305,3 +305,12 @@ export const Twleve = () => {
     </svg>
   );
 };
+
+
+
+
+export const LockButton = () => {
+  return (
+    <div className=" p-5 shadow-inner shadow-gray-400/50 rounded-full "></div>
+  )
+}

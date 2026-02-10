@@ -2,10 +2,10 @@ export const ParentKeyboardStyle =
   "rounded-2xl bg-zinc-800 p-2 rotate-90 scale-50 md:rotate-0 md:scale-75 lg:scale-100  shadow-xl shadow-sky-300/50";
 
 export const baseStyle =
-  "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 hover:scale-95";
+  "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 active:scale-95";
 
 export const arrowStyle =
-  "flex text-md   items-center justify-center h-8 w-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 hover:scale-95";
+  "flex text-md   items-center justify-center h-8 w-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 hover:shadow-none cursor-pointer transition duration-200 active:scale-95";
 
 import {
   Globe,
@@ -21,7 +21,9 @@ import {
   Ten,
   Twleve,
   Eleven,
+  LockButton,
 } from "@/component/kybr/svg";
+import { Fingerprint } from "lucide-react";
 import { ReactNode } from "react";
 
 type KeyConfig = {
@@ -55,7 +57,7 @@ export const keys: KeyConfig[][] = [
     key("F10", <Ten />, "flex-col text-sm"),
     key("F11", <Eleven />, "flex-col text-sm"),
     key("F12", <Twleve />, "flex-col text-sm"),
-    key(""),
+    key("",<LockButton/>),
   ],
 
 
