@@ -20,9 +20,6 @@ export default function Home() {
       herf: "./masonary",
     },
   ];
-
-
-
   return (
     <div className="h-screen w-full bg-black">
       <Container>
