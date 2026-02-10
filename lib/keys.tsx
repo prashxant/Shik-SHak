@@ -1,5 +1,5 @@
 export const ParentKeyboardStyle =
-  "rounded-2xl bg-zinc-800 p-2 rotate-90 scale-50 md:rotate-0 md:scale-75 lg:scale-100  shadow-xl shadow-sky-300/50";
+  "rounded-2xl bg-zinc-800 p-2 shadow-xl shadow-sky-300/50";
 
 export const baseStyle =
   "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 active:shadow-none cursor-pointer transition duration-200 active:scale-95";

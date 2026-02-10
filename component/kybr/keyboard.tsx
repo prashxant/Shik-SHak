@@ -33,7 +33,7 @@ export const Keyboard = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="rotate-90 flex scale-50 flex-col gap-4 md:scale-75 md:rotate-0 lg:scale-100">
       <Screen flashKey={flashKey} />
       <KeyboardKeys onKeyPress={handleKeyPress} />
     </div>
