@@ -14,7 +14,7 @@ export default function Home() {
     },
     {
       title: "Bento Grid",
-      herf: "./masonary",
+      herf: "./masonry",
     },
     {
       title: "Globe Component",

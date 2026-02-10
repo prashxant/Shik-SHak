@@ -1,12 +1,13 @@
+import { Header } from "@/component/header";
 import { columns } from "@/lib/img";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "../../../component/header";
+
 
 export default function Home() {
   return (
-    <div className="bg-bg1 bg-cover">
+    <div className="bg-bg1 p-4 ">
       <div className="mx-auto w-full max-w-4xl px-4 pt-20 pb-10 md:px-8">
         <Header
           heading="Bento grids are cool, you should try it sometimes."

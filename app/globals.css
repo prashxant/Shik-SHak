@@ -1,10 +1,7 @@
 @import "tailwindcss";
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -19,13 +16,6 @@
   --font-pixel-circle: var(--font-geist-pixel-circle);
   --font-pixel-triangle: var(--font-geist-pixel-triangle);
   --font-pixel-line: var(--font-geist-pixel-line);
-}
-
-@media(prefers-color-scheme: dark){
-:root {
-  --foreground: #ffffff;
-  --background: #171717;
-}
 }
 
 @theme{
