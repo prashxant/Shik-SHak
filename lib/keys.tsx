@@ -1,11 +1,11 @@
 export const ParentKeyboardStyle =
-  "rounded-2xl bg-zinc-800 p-2 shadow-xl shadow-sky-300/50";
+  "rounded-2xl bg-neutral-200 dark:bg-zinc-800 p-2 shadow-xl shadow-amber-300/50 dark:shadow-sky-300/50";
 
 export const baseStyle =
-  "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50 active:shadow-none cursor-pointer transition duration-200 active:scale-95";
+  "m-0.5 flex text-md items-center justify-center size-16 border-2 border-neutral-400 dark:border-neutral-700 rounded-[10px] bg-white dark:bg-[#0A090D] dark:text-white text-slate-600 dark:shadow-slate-200 shadow-slate-400 shadow-lg/50 active:shadow-none cursor-pointer transition duration-200 active:scale-95";
 
 export const arrowStyle =
-  "flex text-md   items-center justify-center h-8 w-16 border-2 border-neutral-700 rounded-[10px] bg-[#0A090D] text-white shadow-slate-200 shadow-lg/50   active:shadow-none cursor-pointer transition duration-200 active:scale-95";
+  "flex text-md   items-center justify-center h-8 w-16 border-2 rounded-[10px] bg-white dark:bg-[#0A090D]  dark:text-white border-neutral-400 dark:border-neutral-700 text-slate-600 dark:shadow-slate-200 shadow-slate-400 shadow-lg/50   active:shadow-none cursor-pointer transition duration-200 active:scale-95";
 
 import {
   Globe,

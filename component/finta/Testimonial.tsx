@@ -1,34 +1,24 @@
-import React from 'react'
-import { FintaHeading } from './heading';
-import { Container } from '../container';
-import StarIcon from './starSvg';
-import { TestimonialBento } from './TestimonialBento';
+import React from "react";
+import { FintaHeading } from "./heading";
+import { Container } from "../shared/container";
+import StarIcon from "./starSvg";
+import { TestimonialBento } from "./TestimonialBento";
 
 export const Testimonial = () => {
   return (
-    <div className="width-full h-[70vw] mask-b-from-0.5  overflow-hidden border-neutral-20 pt-5 bg-neutral-100">
+    <div className="width-full border-neutral-20 h-[70vw] overflow-hidden bg-neutral-100 mask-b-from-0.5 pt-5">
       <Container>
         <FintaHeading
           headingBlack="Built for"
           headingBlue=" ambitious founders"
           subheading="Finta is for founders and operators. It's powerful accounting software with simplified expert tax services we wish we'd had ourselves.4.8"
         />
-        <UButton/>
-        <TestimonialBento/>
+        <UButton />
+        <TestimonialBento />
       </Container>
     </div>
   );
-}
-
-
-
-
-
-
-
-
-
-
+};
 
 const UButton = () => {
   return (
@@ -41,4 +31,4 @@ const UButton = () => {
       </button>
     </div>
   );
-}
+};

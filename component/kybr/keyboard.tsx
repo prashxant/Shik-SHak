@@ -33,7 +33,8 @@ export const Keyboard = () => {
   };
 
   return (
-    <div className="rotate-90 flex scale-50 flex-col gap-4 md:scale-75 md:rotate-0 lg:scale-100">
+    <div className="rotate-90  flex scale-50 flex-col gap-4 md:scale-75 md:rotate-0 lg:scale-100">
+
       <Screen flashKey={flashKey} />
       <KeyboardKeys onKeyPress={handleKeyPress} />
     </div>
@@ -46,7 +47,7 @@ export const Screen = ({
   flashKey: { value: string; id: number } | null;
 }) => {
   return (
-   <div className="relative mx-auto  flex h-32 w-64 items-center justify-center overflow-hidden rounded-xl p-8 ">
+    <div className="relative mx-auto text-white flex h-32 w-64 items-center justify-center overflow-hidden rounded-xl p-8">
       <AnimatePresence>
         {flashKey && (
           <motion.div
@@ -58,7 +59,7 @@ export const Screen = ({
               duration: 0.1,
               ease: "easeOut",
             }}
-            className="absolute inset-0 flex items-center justify-center font-pixel-circle text-6xl text-white-400"
+            className="font-pixel-circle absolute inset-0 flex items-center justify-center text-6xl"
           >
             {flashKey.value}
           </motion.div>

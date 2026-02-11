@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Container } from "../component/container";
-import { Header } from "../component/header";
+import { Container } from "../component/shared/container";
+import { Header } from "../component/shared/header";
 
 export default function Home() {
   const Sites = [
