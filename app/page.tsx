@@ -18,7 +18,7 @@ export default function Home() {
     },
     {
       title: "Globe Component",
-      herf: "https://globecomponent.netlify.app/",
+      herf: "/globe",
     },
   ];
   return (
