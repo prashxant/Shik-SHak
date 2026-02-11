@@ -17,9 +17,10 @@ export default function Home() {
             <Sliding />
           </Container>
         </div>
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Inception />
         <Container>
+          
           <Footer />
         </Container>
       </div>
